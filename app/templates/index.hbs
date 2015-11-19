@@ -1,0 +1,33 @@
+<div class="input-field col s12">
+	<p>El cifrado de Hill es un cifrado simetrico por bloques</p>
+</div>
+<div class="input-field col s12">
+  <textarea id="abecedario" class="materialize-textarea"></textarea>
+  <label for="textarea1">Abecedario a utilizar</label> {{!-- {{Text área para el abecedario}} --}}
+</div>
+<div class="row">
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="textoClaro" type="text" class="validate">
+      <label for="Texto a cifrar">Texto claro</label>{{!-- {{Text área para el mensaje}} --}}
+    </div>
+    <div class="input-field col s6">
+      <input id="clave" type="text" class="validate">
+      <label for="clave">Clave</label>{{!-- {{Text área para la clave}} --}}
+    </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="row">
+    <div class="input-field col s6">
+     	<center><<button {{action 'limpiar'}} class="waves-effect waves-light btn-large">Limpiar</button></center> {{!-- {{Llama la acción para borrar los campos}} --}}
+    </div>
+    <div class="input-field col s6">
+    	<center><button {{action 'cifrar'}} class="waves-effect waves-light btn-large">Cifrar</button></center>{{!-- {{Llamma la acción para cifrar}} --}}
+    </div>
+  </div>
+ </div>
+ <div class="input-field col s12">
+  <textarea id="textoCifrado" disabled="true" class="materialize-textarea"></textarea>
+  <label for="textarea">Mensaje cifrado</label> {{!-- {{Text área bloqueada para mostrar el mensaje}} --}}
+</div>
